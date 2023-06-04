@@ -1,0 +1,22 @@
+--Create a clothes store database
+
+CREATE TABLE store (id INTEGER PRIMARY KEY, name TEXT, price REAL, stock INTEGER);
+
+INSERT INTO store VALUES (1,"T-Shirt", 5.99, 55);
+INSERT INTO store VALUES (2,"Shoes", 50, 106);
+INSERT INTO store VALUES (3,"Pant", 20, 64);
+INSERT INTO store VALUES (4,"Crop-top", 15.99, 35);
+INSERT INTO store VALUES (5,"Jogger", 12, 73);
+INSERT INTO store VALUES (6, "Legging", 59.99, 94);
+INSERT INTO store VALUES (7, "Sweat-Shirt", 40.99, 78);
+INSERT INTO store VALUES (8, "Dress", 25.99, 45);
+INSERT INTO store VALUES (9, "Sandals",16.50,138);
+INSERT INTO store VALUES (10, "Skirt",12,39);
+INSERT INTO store VALUES (11,"Vest",65.99,23);
+INSERT INTO store VALUES (12,"Boot",135,43);
+INSERT INTO store VALUES (13,"Jumper",10,95);
+INSERT INTO store VALUES (14,"Short",6,37);
+INSERT INTO store VALUES (15,"Blouse",34.99,50);
+
+-- display the database under $100 order by price
+SELECT * FROM store WHERE price<100 ORDER BY price;
